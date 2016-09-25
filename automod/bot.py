@@ -974,7 +974,7 @@ class AutoMod(discord.Client):
         Usage: {command_prefix}id
         Tells the user their id.
         """
-        return Response('your id is `%s`' % author.id, reply=True)
+        return Response('your id is `{}`'.format(author.id), reply=True)
 
     async def handle_forcebackup(self, author):
         """
